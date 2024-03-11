@@ -1,7 +1,4 @@
-import React, { useState } from "react";
-import Logo from "../Images/Logo (3).png";
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { useState } from "react";
 import Logo2 from "../Images/Logo (2).png";
 import Facebook from "../Images/Navigation Link.png";
 import FacebookO from "../Images/Property 1=FB H.png";
@@ -11,15 +8,11 @@ import Twitter from "../Images/Navigation Link (2).png";
 import TwitterO from "../Images/Property 1=T H.png";
 import Btn1 from "../Images/Vector (4).png";
 import Btn2 from "../Images/Vector (5).png";
-import btnbg from "../Images/Vector (4).png";
 import Button from "./Button";
 import dot from "../Images/Ellipse 1.png";
 import line from "../Images/Rectangle 2 (1).png";
 import { TiThMenu, TiTimes } from "react-icons/ti";
-import { Link, NavLink } from "react-router-dom";
-interface SidebarItem {
-  text: string;
-}
+import { NavLink } from "react-router-dom";
 function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isHoveredH, setIsHoveredh] = useState(false);
@@ -28,22 +21,9 @@ function Navbar() {
   const [isHoveredF, setIsHoveredF] = useState(false);
   const [isHoveredY, setIsHoveredY] = useState(false);
   const [isHoveredT, setIsHoveredT] = useState(false);
-  let [isOpen, setIsOpen] = useState(true);
 
-  function closeModal() {
-    setIsOpen(false);
-  }
-
-  function openModal() {
-    setIsOpen(true);
-  }
   const myValue: string = "Get Started";
   const myColor: string = "black";
-  const sidebarItems: SidebarItem[] = [
-    { text: "Home" },
-    { text: "About" },
-    { text: "Services" },
-  ];
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
@@ -75,7 +55,7 @@ function Navbar() {
         } z-10 left-0  top-[100px] h-[100vh] w-full  bg-[url('./Components/Images/bgtexture1.png')] lg:hidden`}
       >
         <div className="flex flex-col justify-center font-peligro-stencil items-center w-full bg-slate-900/80 backdrop-brightness-50">
-          <ul className="flex flex-col gap-16 text-[18px] justify-center items-center  font-normal items-start">
+          <ul className="flex flex-col gap-16 text-[18px] justify-center items-center  font-normal">
             <li onClick={toggleSidebar}>
               <NavLink
                 to="/"

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import Van from "../Images/icon1.png";
 import Van2 from "../Images/icon2.png";
 import Van3 from "../Images/icon3.png";

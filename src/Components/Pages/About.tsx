@@ -1,15 +1,7 @@
-import React from "react";
 import frame1 from "../Images/Group (1).png";
 import mask from "../Images/Maskgroup.png";
 import man from "../Images/Man.png";
 import comma from "../Images/Comma.png";
-// import comma from "../Images/Comma.png";
-
-// import frame1 from "../Images/Aboutbg.png";
-import frame3 from "../Images/Maskgroup.png";
-import image1 from "../Images/Fimage1.png";
-import image2 from "../Images/Fimage2.png";
-import image3 from "../Images/Fimage3.png";
 import man1 from "../Images/Man1.png";
 import manh1 from "../Images/Manh1.png";
 import man2 from "../Images/Man2.png";

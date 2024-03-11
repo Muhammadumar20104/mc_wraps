@@ -1,17 +1,14 @@
-import React from "react";
-import { Slide } from "react-slideshow-image";
-import Slider from "./Slider";
 import Button from "./Button";
 import Btn1 from "../Images/Vector (4).png";
 import Btn2 from "../Images/Vector (5).png";
 import ImageSlider from "./ImageSlider";
 
 function Service() {
-    const myValue: string = "Get Started";
+  const myValue: string = "Get Started";
   const myColor: string = "black";
   return (
     <div>
-      <ImageSlider/>
+      <ImageSlider />
       <div className="bg-[url('.\Components\Images\IYC.png')] bg-no-repeat px-4 flex justify-between">
         <div className="pt-28  flex lg:flex-row sm:flex-col gap-8 justify-between">
           <div className="lg:w-[85%] sm:w-full flex flex-col gap-8 justify-center ">

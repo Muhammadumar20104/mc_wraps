@@ -1,73 +1,14 @@
-import React, { useState } from "react";
-import SL1 from "../Images/SL1.png";
-import SL2 from "../Images/SL2.png";
-import SL3 from "../Images/SL3.png";
-import SL4 from "../Images/SL4.png";
+import { useState } from "react";
 import S1 from "../Images/Sliderp1.png";
 import S2 from "../Images/Sliderp2.png";
 import S3 from "../Images/Sliderp3.png";
 import S4 from "../Images/Sliderp4.png";
-import Van from "../Images/icon1.png";
-import Van2 from "../Images/icon2.png";
-import Van3 from "../Images/icon3.png";
-import Van4 from "../Images/icon5.png";
-import Van5 from "../Images/icon6.png";
-import Van6 from "../Images/icon8.png";
-import Van7 from "../Images/icon1.png";
 import "react-slideshow-image/dist/styles.css";
 import { Slide } from "react-slideshow-image";
 import ListAnimate from "./ListAnimate";
-
-interface List {
-  id: number;
-  title: string;
-  logo: string;
-}
 function ImageSlider() {
   const [selectedImage, setSelectedImage] = useState(S1);
   const [activeIndex, setActiveIndex] = useState(0);
-  const lists: List[] = [
-    {
-      id: 1,
-      title: "Commercial Fleet Wraps",
-      logo: Van,
-    },
-    {
-      id: 2,
-      title: "Car & Truck Wraps",
-      logo: Van2,
-    },
-    {
-      id: 3,
-      title: "Boat Wraps",
-      logo: Van3,
-    },
-    {
-      id: 4,
-      title: "Partial Wraps & Graphics",
-      logo: Van4,
-    },
-    {
-      id: 5,
-      title: "Car Magnets",
-      logo: Van5,
-    },
-    {
-      id: 6,
-      title: "Print Graphics & Stickers",
-      logo: Van6,
-    },
-    {
-      id: 7,
-      title: "Banners & Signs",
-      logo: Van7,
-    },
-    {
-      id: 8,
-      title: "Graphic Design & Logos",
-      logo: Van,
-    },
-  ];
 
   const handleThumbnailClick = (imageSrc: any, index: any) => {
     setSelectedImage(imageSrc);

@@ -1,4 +1,3 @@
-import React from "react";
 import Carlogo from "../Images/image.png";
 import LogoSimple from "../Images/Vector (6).png";
 import Btn1 from "../Images/Vector (4).png";
@@ -8,7 +7,6 @@ import Button from "./Button";
 import WorkwithUs from "./WorkwithUs";
 import Projects from "./Projects";
 import Testimonial from "./Testimonial";
-import Footer from "./Footer";
 
 function Home() {
   const myValue: string = "Get A Quote";

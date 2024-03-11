@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import dot from "../Images/Ellipse 1.png";
 import line from "../Images/Rectangle 2 (1).png";
 

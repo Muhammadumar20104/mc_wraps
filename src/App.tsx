@@ -1,26 +1,12 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import bgtexture from "./Components/Images/Vector (6).png";
 import "./App.css";
-import Navbar from "./Components/Pages/Navbar";
-import Button from "./Components/Pages/Button";
 import Home from "./Components/Pages/Home";
-import WorkwithUs from "./Components/Pages/WorkwithUs";
-import Projects from "./Components/Pages/Projects";
-import Testimonial from "./Components/Pages/Testimonial";
 import About from "./Components/Pages/About";
-import Mans from "./Components/Pages/Mans";
-import Slider from "./Components/Pages/Slider";
-import ImageSlider from "./Components/Pages/ImageSlider";
-import Footer from "./Components/Pages/Footer";
-import ContactUs from "./Components/Pages/ContactUs";
-import ListAnimate from "./Components/Pages/ListAnimate";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./Components/Pages/Layout";
 import Service from "./Components/Pages/Service";
+import ContactUs from "./Components/Pages/ContactUs";
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>

@@ -1,9 +1,6 @@
-import React from "react";
 import Button from "./Button";
 import Btn1 from "../Images/Vector (4).png";
 import Btn2 from "../Images/Vector (5).png";
-import Map from "../Images/Map.png";
-
 
 function ContactUs() {
   const myValue: string = "Submit";
@@ -19,7 +16,7 @@ function ContactUs() {
         <div className="xsm:grid xsm:grid-cols-12 gap-10 sm:flex sm:flex-col mx-6 pt-10 justify-content-center xms:w-full">
           <div className="xlg:col-span-5 sm:col-span-12 w-[100%] items-center flex flex-col gap-6 ">
             <div className="xsm:grid xsm:grid-cols-2 w-[99%] sm:flex sm:flex-col  gap-4">
-              <div className="xms:text-[30px] sm:text-[20px] w-fit text-white font-peligro-stencil  col-span-1 translate-x-20">
+              <div className="xms:text-[30px] sm:text-[20px] w-fit text-white font-peligro-stencil  col-span-1 xsm:translate-x-20">
                 Mike Clark
               </div>
               <div className="font-sans text-[20px] text-white xsm:ml-20 font-light flex items-center col-span-1">
@@ -27,7 +24,7 @@ function ContactUs() {
               </div>
             </div>
             <div className="xsm:grid xsm:grid-cols-2 w-[99%] sm:flex sm:flex-col  gap-4 ">
-              <div className="xms:text-[30px] sm:text-[20px] text-white font-peligro-stencil w-fit translate-x-20">
+              <div className="xms:text-[30px] sm:text-[20px] text-white font-peligro-stencil w-fit xsm:translate-x-20">
                 Shelly Clark
               </div>
               <div className="font-sans text-[20px] text-white xsm:ml-20 font-light items-center flex">
@@ -35,7 +32,7 @@ function ContactUs() {
               </div>
             </div>
             <div className="xsm:grid xsm:grid-cols-2 w-[99%] sm:flex sm:flex-col  gap-4">
-              <div className="xms:text-[30px] sm:text-[20px] text-white font-peligro-stencil w-fit translate-x-20">
+              <div className="xms:text-[30px] sm:text-[20px] text-white font-peligro-stencil w-fit xsm:translate-x-20">
                 Office Info
               </div>
               <div className="font-sans text-[20px] text-white w-auto xsm:ml-20 flex flex-col gap-4 font-light ">
@@ -101,8 +98,7 @@ function ContactUs() {
             </div>
           </div>
         </div>
-        <div className="relative bg-[url('.\Components\Images\Map.png')] bg-cover bg-no-repeat h-[50vh] top-[90px] z-1">
-        </div>
+        <div className="relative bg-[url('.\Components\Images\Map.png')] bg-cover bg-no-repeat h-[50vh] top-[90px] z-1"></div>
       </div>
     </>
   );
