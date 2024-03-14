@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import carpic from "../Images/ProjectCar.png";
 import mask from "../Images/Maskgroup.png";
 import Button from "./Button";
@@ -74,19 +73,18 @@ function Projects() {
       h: "134px",
     },
   ];
-  const [isHovered, setIsHovered] = useState(false);
-  const customPrevArrow = (props: any) => (
-    <div {...props} style={{ display: "none" }}></div>
-  );
-  const customNextArrow = (props: any) => (
-    <div {...props} style={{ display: "none" }}></div>
-  );
+  // const customPrevArrow = (props: any) => (
+  //   <div {...props} style={{ display: "none" }}></div>
+  // );
+  // const customNextArrow = (props: any) => (
+  //   <div {...props} style={{ display: "none" }}></div>
+  // );
 
   return (
     <div>
       <div className="md:pl-20">
-        <div className="bg-[url('.\Components\Images\Projectsbglogo.png')] w-fit bg-repeat">
-          <div className="font-peligro-stencil text-white text-[40px] pt-28">
+        <div className="bg-[url('.\Components\Images\Projectsbglogo.png')] w-fit mx-2  bg-repeat">
+          <div className="font-peligro-stencil text-white text-[40px] flex justify-center text-center pt-28">
             Featured Projects & Clients
           </div>
         </div>
@@ -94,16 +92,16 @@ function Projects() {
       <div className="flex flex-col gap-20">
         <div className="relative ">
           <img src={mask} alt="" className="w-[100%] h-[400px] object-cover" />
-          <div className="absolute lg:top-20  md:top-16 sm:top-14 left-0 w-full h-full ">
+          <div className="absolute lg:top-20  md:top-16 xs:top-14 left-0 w-full h-full ">
             <Slide
               slidesToScroll={1}
               slidesToShow={1}
               indicators={true}
               autoplay={false}
-              prevArrow={customPrevArrow}
-              nextArrow={customNextArrow}
+              // prevArrow={customPrevArrow}
+              // nextArrow={customNextArrow}
               arrows={false}
-              dots={false}
+              // dots={false}
               responsive={[
                 {
                   breakpoint: 800,
@@ -122,19 +120,19 @@ function Projects() {
               ]}
             >
               <div className="">
-                <div className=" lg:w-[90%] xsm:w-[90%] sm:w-[100%] justify-center items-center flex xsm:flex-row sm:flex-col gap-2">
+                <div className=" lg:w-[90%] xsm:w-[90%] xs:w-[100%] justify-center items-center flex xsm:flex-row xs:flex-col gap-2">
                   <div className="object-cover flex justify-center ">
                     <img
                       src={carpic}
                       alt=""
-                      className=" lg:w-[80%] xsm:w-[69%] sm:w-[40%] img-fluid  "
+                      className=" lg:w-[80%] xsm:w-[69%] xs:w-[40%] img-fluid  "
                     />
                   </div>
                   <div className="flex flex-col  text-justify w-[100%] justify-center">
-                    <div className="lg:text-[30px] xmd:text-[20px] xsm:text-[20px]  font-normal font-peligro-stencil flex xsm:justify-start sm:justify-center ">
+                    <div className="lg:text-[30px] xmd:text-[20px] xsm:text-[20px]  font-normal font-peligro-stencil flex xsm:justify-start xs:justify-center ">
                       <p> Project name</p>
                     </div>
-                    <div className="lg:text-[20px] xmd:text-[14px]  xsm:text-[14px] lg:leading-9 flex flex-wrap xsm:text-start sm:text-center items-center">
+                    <div className="lg:text-[20px] xmd:text-[14px]  xsm:text-[14px] lg:leading-9 flex flex-wrap xsm:text-start xs:text-center items-center">
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Curabitur sit amet urna ut dolor luctus dapibus in id
@@ -142,7 +140,7 @@ function Projects() {
                         sem, finibus a fermentum id, fringilla at enim.
                       </p>
                     </div>
-                    <div className="flex xsm:justify-start sm:justify-center">
+                    <div className="flex xsm:justify-start xs:justify-center">
                       <Button
                         txt={myValue}
                         Btn1={Btn1}

@@ -39,10 +39,10 @@ function HoverCard({ id, frame, title, logo, image, hframe, hlogo }: any) {
             className="w-full h-auto z-10 p-4 rounded-3xl  inset-0 transform transition-transform duration-800 group-hover:scale-125"
           />
           <div className="flex flex-col gap-20">
-            <div className="w-32 md:w-48 sm:w-28 sm:top-[30px] xsm:top-[50px] sm:left-[60px] text-[10px] md:left-[100px] absolute xlg:top-[70px] left-[80px] z-10 transform -translate-x-1/2 -translate-y-1/2 text-white font-peligro-stencil xlg:text-[26px] xsm:text-[16px]">
+            <div className="w-32 md:w-48 xs:w-28 xs:top-[30px] xsm:top-[50px] xs:left-[60px] text-[10px] md:left-[100px] absolute xlg:top-[70px] left-[80px] z-10 transform -translate-x-1/2 -translate-y-1/2 text-white font-peligro-stencil xlg:text-[26px] xsm:text-[16px]">
               {title}
             </div>
-            <div className="xsm:w-14 sm:top-[70px]  sm:left-6 xsm:top-[120px] xsm:left-9 xlg:w-24 sm:w-16 absolute lg:left-8 lg:top-[120px] xlg:top-[170px] p-2 xlg:left-12 z-10 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="xsm:w-14 xs:top-[70px]  xs:left-6 xsm:top-[120px] xsm:left-9 xlg:w-24 xs:w-16 absolute lg:left-8 lg:top-[120px] xlg:top-[170px] p-2 xlg:left-12 z-10 transform -translate-x-1/2 -translate-y-1/2">
               <img src={hlogo} alt="" className="" />
             </div>
             {/* <div className="absolute lg:top-[150px] md:top-[180px] xsm:top-[170px] sm:top-[100px] z-10 flex text-center text-white gap-1 text-xs justify-center">
@@ -71,10 +71,10 @@ function HoverCard({ id, frame, title, logo, image, hframe, hlogo }: any) {
             className="w-full h-auto z-10 p-4 rounded-3xl  inset-0 transform transition-transform duration-700 group-hover:scale-125"
           />
           <div className="flex flex-col gap-10 ">
-            <div className="w-32 md:w-48 sm:w-28 sm:top-[50px] sm:left-[60px] text-[10px] md:left-[100px] absolute xlg:top-[70px] left-[80px] z-10 transform -translate-x-1/2 -translate-y-1/2 text-black font-peligro-stencil xlg:text-[26px] xsm:text-[16px]">
+            <div className="w-32 md:w-48 xs:w-28 xs:top-[50px] xs:left-[60px] text-[10px] md:left-[100px] absolute xlg:top-[70px] left-[80px] z-10 transform -translate-x-1/2 -translate-y-1/2 text-black font-peligro-stencil xlg:text-[26px] xsm:text-[16px]">
               {title}
             </div>
-            <div className="xsm:w-14 sm:top-[85px] sm:left-6 xsm:top-[150px] xsm:left-9 xlg:w-24 sm:w-16 absolute lg:left-8 lg:top-[120px] xlg:top-[170px] p-2 xlg:left-12 z-10 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="xsm:w-14 xs:top-[85px] xs:left-6 xsm:top-[150px] xsm:left-9 xlg:w-24 xs:w-16 absolute lg:left-8 lg:top-[120px] xlg:top-[170px] p-2 xlg:left-12 z-10 transform -translate-x-1/2 -translate-y-1/2">
               <img src={logo} alt="" className="" />
             </div>
             <div></div>

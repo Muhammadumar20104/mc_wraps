@@ -13,11 +13,11 @@ function Home() {
   const myColor: string = "black";
   return (
     <>
-      <div className="relative flex lg:flex-row sm:flex-col sm:px-2 md:pl-20 lg:gap-8 xmd:gap-14 sm:gap-16 pt-44">
+      <div className="relative flex lg:flex-row xs:flex-col sm:px-2 md:pl-20 lg:gap-8 xmd:gap-14 sm:gap-16 pt-44">
         <div className="h-fit w-fit absolute top-16 left-[40%] hidden md:block">
           <img src={LogoSimple} alt="" />
         </div>
-        <div className="w-auto  lg:w-[690px] flex-col flex sm:flex-col  gap-4">
+        <div className="w-auto  lg:w-[690px] flex-col flex xs:flex-col  gap-4">
           <div className="font-peligro-stencil text-[50px] xsm:text-[60px] text-white xsm:text-start sm:text-center">
             Custom Vehicle Wraps & Signs
           </div>

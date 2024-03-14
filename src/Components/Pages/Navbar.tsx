@@ -30,11 +30,13 @@ function Navbar() {
   return (
     <div className="relative flex justify-between px-20 sm:px-2 xsm:px-10 pt-4 lg:items-start  sm:items-center">
       <div className="flex  w-fit ">
-        <img
-          src={Logo2}
-          alt="Logo Not Found"
-          className="xlg:w-[100%] xsm:w-[70%]  sm:w-[50%]  "
-        />
+        <NavLink to={"/"}>
+          <img
+            src={Logo2}
+            alt="Logo Not Found"
+            className="xlg:w-[100%] xsm:w-[70%] cursor-pointer  sm:w-[50%]  "
+          />
+        </NavLink>
       </div>
       <div className="block text-center lg:hidden">
         {isSidebarOpen ? (
@@ -52,7 +54,7 @@ function Navbar() {
       <div
         className={`absolute  gap-3 ${
           isSidebarOpen ? "flex" : "hidden"
-        } z-10 left-0  top-[100px] h-[100vh] w-full  bg-[url('./Components/Images/bgtexture1.png')] lg:hidden`}
+        } z-10 left-0  top-[120px] h-[100vh] w-full  bg-[url('./Components/Images/bgtexture1.png')] lg:hidden`}
       >
         <div className="flex flex-col justify-center font-peligro-stencil items-center w-full bg-slate-900/80 backdrop-brightness-50">
           <ul className="flex flex-col gap-16 text-[18px] justify-center items-center  font-normal">
@@ -246,13 +248,13 @@ function Navbar() {
               {isHoveredS ? (
                 <div className="flex gap-1 justify-center ">
                   <span>
-                    <img src={line} alt="" className="w-8 h-[2px]" />
+                    <img src={line} alt="" className="w-7 h-[2px]" />
                   </span>
                   <span>
                     <img src={dot} alt="" className="w-auto" />
                   </span>
                   <span>
-                    <img src={line} alt="" className="w-8 h-[2px]" />
+                    <img src={line} alt="" className="w-7 h-[2px]" />
                   </span>
                 </div>
               ) : (

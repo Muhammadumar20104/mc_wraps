@@ -6,21 +6,24 @@ export default {
   ],
   theme: {
     screens: {
-
-      'sm': '320px',
+      'xs': '200px',
+      'sm': '200px',
+      '3sm':'300px',
+      '4sm':'400px',
+      '5sm':'500px',
       'xsm': '600px',
       // => @media (min-width: 640px) { ... }
       'xmd': '920px',
       'md': '768px',
       // => @media (min-width: 768px) { ... }
       'lg': '1024px',
-      'slg':'1100',
+      'slg': '1100px',
       // => @media (min-width: 1024px) { ... }
       'xlg': '1200px',
       'xl': '1280px',
-      'xll':'1300px',
+      'xll': '1300px',
       // => @media (min-width: 1280px) { ... }
-      'xlll':'1400px',
+      'xlll': '1400px',
       '2xl': '1440px',
       // => @media (min-width: 1536px) { ... }
     },

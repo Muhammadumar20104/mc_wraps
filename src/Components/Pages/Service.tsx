@@ -10,7 +10,7 @@ function Service() {
     <div>
       <ImageSlider />
       <div className="bg-[url('.\Components\Images\IYC.png')] bg-no-repeat px-4 flex justify-between">
-        <div className="pt-28  flex lg:flex-row sm:flex-col gap-8 justify-between">
+        <div className="pt-28  flex lg:flex-row xs:flex-col gap-8 justify-between">
           <div className="lg:w-[85%] sm:w-full flex flex-col gap-8 justify-center ">
             <div className="text-[40px]  xsm:text-start sm:text-center font-peligro-stencil text-white ">
               It’s Time to Improve Your Company Image

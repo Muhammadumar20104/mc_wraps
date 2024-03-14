@@ -40,7 +40,7 @@ function About() {
   ];
   return (
     <>
-      <div className="bg-[url('.\Components\Images\Aboutbg.png')] bg-no-repeat">
+      <div className="bg-[url('.\Components\Images\Aboutbg.png')] bg-no-repeat object-contain mx-6">
         <div className="xsm:text-[40px] sm:text-[30px] text-white xsm:text-start sm:text-center font-peligro-stencil pt-28">
           Atlanta Metro’s Premier Vehicle Wrap Specialist
         </div>
@@ -48,7 +48,7 @@ function About() {
       <div>
         <img src={frame1} alt="" />
       </div>
-      <div className="bg-[url('.\Components\Images\MTT.png')] bg-no-repeat px-2">
+      <div className="bg-[url('.\Components\Images\MTT.png')] bg-no-repeat mx-6">
         <div className="text-[40px] text-white  xsm:text-start sm:text-center font-peligro-stencil pt-28">
           Meet The Team
         </div>
@@ -103,8 +103,8 @@ function About() {
           <Mans id={man.id} man={man.man} manh={man.manh} />
         ))}
       </div>
-      <div className="bg-[url('.\Components\Images\IYC.png')] bg-no-repeat px-4 flex justify-between">
-        <div className="pt-28  flex lg:flex-row sm:flex-col gap-8 justify-between">
+      <div className="bg-[url('.\Components\Images\IYC.png')] bg-no-repeat mx-6 flex justify-between">
+        <div className="pt-28  flex lg:flex-row xs:flex-col gap-8 justify-between">
           <div className="lg:w-[85%] sm:w-full flex flex-col gap-8 justify-center ">
             <div className="text-[40px]  xsm:text-start sm:text-center font-peligro-stencil text-white ">
               It’s Time to Improve Your Company Image 

@@ -50,7 +50,7 @@ function ListAnimate() {
     {
       id: 7,
       title: "Banners & Signs",
-      logo: Van7,
+      logo: Van,
     },
     {
       id: 8,
@@ -66,31 +66,64 @@ function ListAnimate() {
   const handleMouseLeave = () => {
     setHoveredItem(null);
   };
+  // const logoStyle = {
+  //   transition: "width 0.6s ease-in-out", // Adjust transition properties for logo width
+  //   width: hoveredItem ? "10%" : "0%", // Initially hide the logo
+  // };
 
-  const underlineStyle = {
-    borderBottom: "",
-    backgroundImage: "linear-gradient(to right, #E60B09, #E9D022)",
-    backgroundSize: "100% 2px",
-    backgroundPosition: "0 100%",
-    backgroundRepeat: "no-repeat",
-  };
+  // const underlineStyle = {
+  //   transition: "background-size 0.6s ease-in-out", // Adjust transition properties for underline
+  //   borderBottom: "0", // Remove default border
+  //   backgroundImage: "linear-gradient(to right, #E60B09, #E9D022)",
+  //   backgroundSize: hoveredItem ? "100% 2px" : "0% 2px", // Initially hide the underline
+  //   backgroundPosition: "0 100%",
+  //   backgroundRepeat: "no-repeat",
+  // };
+
+  // const textStyle = {
+  //   transition: "color 0.6s ease-in-out", // Adjust transition properties for text color
+  //   fontSize: "24px",
+  //   fontFamily: "sans-serif",
+  //   color: "white",
+  // };
 
   return (
     <>
       {lists.map((list) => (
-        <div className="w-fit flex justify-center items-center" key={list.id}>
+        <div className="xmd:w-[100%] sm:w-[70%] " key={list.id}>
           <div
             className="flex items-center"
             onMouseEnter={() => handleMouseEnter(list.id)}
             onMouseLeave={handleMouseLeave}
           >
-            {hoveredItem === list.id && (
-              <div>
-                <img src={list.logo} alt="" className="w-[80%]" />
-              </div>
-            )}
-            <div className="text-[24px] font-sans text-white">
-              <span style={hoveredItem === list.id ? underlineStyle : {}}>
+            <div
+              style={{
+                transition: "width 0.6s ease-in-out",
+                width: hoveredItem === list.id ? "15%" : "0%",
+              }}
+            >
+              <img src={list.logo} alt="" className="w-fit h-auto mr-4" />
+            </div>
+            <div
+              className="text-[24px] font-sans"
+              style={{
+                fontSize: "24px",
+                fontFamily: "sans-serif",
+                color: "white",
+              }}
+            >
+              <span
+                style={{
+                  borderBottom: "0",
+                  backgroundImage:
+                    "linear-gradient(to right, #E60B09, #E9D022)",
+                  backgroundSize:
+                    hoveredItem === list.id ? "100% 2px" : "0% 2px",
+                  backgroundPosition: "0 100%",
+                  backgroundRepeat: "no-repeat",
+                  transition: "background-size 0.6s ease-in-out",
+                }}
+              >
                 {list.title}
               </span>
             </div>

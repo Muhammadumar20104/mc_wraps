@@ -1,4 +1,3 @@
-import React from "react";
 import image1 from "../Images/image1.png";
 import image2 from "../Images/image2.png";
 import image3 from "../Images/image3.png";
@@ -111,7 +110,7 @@ function WorkwithUs() {
   ];
 
   return (
-    <div className="md:pl-20 sm:px-2 flex flex-col gap-5">
+    <div className="md:pl-20 xs:px-2 flex flex-col gap-5">
       <div className="">
         <div className="bg-[url('./Components/Images/WorkWithUs.png')] bg-no-repeat ">
           <div className="text-[40px] font-peligro-stencil text-white  mt-14 pt-16">
